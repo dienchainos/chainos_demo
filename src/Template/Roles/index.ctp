@@ -31,3 +31,4 @@
     </tr>
     <?php endforeach; ?>
 </table>
+<?= $this->element('Layouts/pagination') ?>

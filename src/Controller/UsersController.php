@@ -13,7 +13,7 @@ class UsersController extends AppController
 	
 	public function index()
 	{
-		$users = $this->Users->getUserList();
+		$users = $this->Paginator->paginate($this->Users->getUserList());
 		
 		$this->set(compact('users'));
 	}
