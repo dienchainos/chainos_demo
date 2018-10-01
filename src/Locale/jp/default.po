@@ -1,0 +1,87 @@
+msgid "Dashboard"
+msgstr "ダッシュボード"
+
+msgid "User"
+msgstr "ユーザー"
+
+msgid "Role"
+msgstr "役割"
+
+msgid "Report Form"
+msgstr "レポートフォーム"
+
+msgid "Format"
+msgstr "レポートフォーム"
+
+msgid "Report"
+msgstr "報告"
+
+msgid "Messages"
+msgstr "メッセージ"
+
+msgid "Logout"
+msgstr "ログアウト"
+
+msgid "Login"
+msgstr "ログイン"
+
+msgid "Language: en"
+msgstr "言語: jp"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "Format Name"
+msgstr "フォーマット"
+
+msgid "Name"
+msgstr "名"
+
+msgid "From"
+msgstr "送信者"
+
+msgid "Districts"
+msgstr "地区"
+
+msgid "Provinces"
+msgstr "州"
+
+msgid "Wards"
+msgstr "ワード"
+
+msgid "Created"
+msgstr "作成日"
+
+msgid "Username"
+msgstr "名前"
+
+msgid "Action"
+msgstr "アクション"
+
+msgid "Role"
+msgstr "役割"
+
+msgid "Type"
+msgstr "役割"
+
+msgid "Role Name"
+msgstr "役割"
+
+msgid "Add"
+msgstr "追加"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "View"
+msgstr "ビュー"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Go Back"
+msgstr "戻る"
+
+msgid "Submit"
+msgstr "戻る"
+

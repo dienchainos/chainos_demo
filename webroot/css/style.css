@@ -92,11 +92,10 @@ ul.pagination li a {
 }
 
 ul.pagination li.active a {
-    background-color: #DCE47E;
-    color: #FFF;
     font-weight: bold;
     cursor: default;
 }
+
 ul.pagination .disabled:hover a {
     background: none;
 }
@@ -396,7 +395,6 @@ fieldset legend {
 
 .form button[type="submit"] {
     float: right;
-    text-transform: uppercase;
     box-shadow: none;
 }
 
@@ -422,7 +420,7 @@ div.message {
     right: 15px;
     z-index: 999;
     overflow: hidden;
-    height: 50px;
+    height: 41px;
     line-height: 2.5em;
 }
 

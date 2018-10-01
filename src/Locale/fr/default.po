@@ -1,0 +1,41 @@
+msgid "Dashboard"
+msgstr "ダッシュボード"
+
+msgid "User"
+msgstr "ユーザー"
+
+msgid "Role"
+msgstr "役割"
+
+msgid "Report Form"
+msgstr "レポートフォーム"
+
+msgid "Report"
+msgstr "報告"
+
+msgid "Messages"
+msgstr "メッセージ"
+
+msgid "Logout"
+msgstr "ログアウト"
+
+msgid "Login"
+msgstr "ログイン"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Add"
+msgstr "追加"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "View"
+msgstr "ビュー"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Go Back"
+msgstr "戻る"

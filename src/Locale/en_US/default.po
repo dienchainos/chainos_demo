@@ -1,0 +1,85 @@
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "User"
+msgstr "User"
+
+msgid "Role"
+msgstr "Role"
+
+msgid "Report Form"
+msgstr "Report Form"
+
+msgid "Format"
+msgstr "Report Form"
+
+msgid "Report"
+msgstr "Report"
+
+msgid "Messages"
+msgstr "Messages"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Language: en"
+msgstr "Language: en"
+
+msgid "Title"
+msgstr "Title"
+
+msgid "Format Name"
+msgstr "Format Name"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "From"
+msgstr "From"
+
+msgid "Districts"
+msgstr "Districts"
+
+msgid "Provinces"
+msgstr "Provinces"
+
+msgid "Wards"
+msgstr "Wards"
+
+msgid "Created"
+msgstr "Created"
+
+msgid "Username"
+msgstr "Username"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Role"
+msgstr "Role Name"
+
+msgid "Role Name"
+msgstr "Role Name"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Add"
+msgstr "Add"
+
+msgid "Edit"
+msgstr "Edit"
+
+msgid "View"
+msgstr "View"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "Go Back"
+msgstr "Go Back"
+
+

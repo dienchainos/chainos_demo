@@ -13,7 +13,7 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Chainos demo';
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,33 +25,75 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
-
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('style.css') ?>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <?= $this->Html->css(['bootstrap.min.css', 'base.css', 'style.css', 'themes/default/style.min.css', 'custom.css'])
+    ?>
+    <?= $this->Html->script(['jquery-1.11.1.min.js', 'bootstrap.min.js', 'jquery.bootstrap-dropdown-hover.js', 'jstree.min.js', 'ckeditor/ckeditor.js', 'custom.js']) ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
+    <?php if(!empty($user)) : ?>
+    <nav class="navbar navbar-inverse">
         <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
+            <li class="name <?= $controller == 'dashboards' ? 'active' : '' ?>">
+                <h3><a href="/dashboards"><?= __('Dashboard') ?></a></h3>
             </li>
         </ul>
-        <div class="top-bar-section">
-            <ul class="right">
-                <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
-            </ul>
-        </div>
+        <ul class="nav navbar-nav">
+            <?php if (isset($role) && $role === 'admin') : ?>
+            <li class="<?= $controller == 'Users' ? 'active' : '' ?>"><a href="/users"><?= __('User') ?></a></li>
+            <li class="<?= $controller == 'Roles' ? 'active' : '' ?>"><a href="/roles"><?= __('Role') ?></a></li>
+            <li class="<?= $controller == 'Formats' ? 'active' : '' ?>"><a href="/formats"><?= __('Report Form') ?></a></li>
+            <?php endif; ?>
+            <li class="<?= $controller == 'Reports' ? 'active' : '' ?>"><a href="/reports"><?= __('Report') ?></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="far fa-envelope">
+                        <span class="badge badge-danger"><?= isset($numberNewReport) ? $numberNewReport : 0 ?></span>
+                    </i>
+                    <?= __('Messages') ?>
+                </a>
+                <div class="dropdown-custom" style="display: none">
+                    <?= $this->element('Dashboards/message') ?>
+                </div>
+            </li>
+            <?= $this->element('Layouts/languages') ?>
+            <li><a href="/users/view"><span class="glyphicon glyphicon-user"></span>  <?=$user['username']?></a></li>
+            <li><a href="/users/logout"><span class="glyphicon glyphicon-log-in"></span>  <?= __('Logout') ?></a></li>
+        </ul>
     </nav>
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
+    <?php endif; ?>
+    <div class="container clearfix <?= $controller == 'Dashboards' ? 'container-dashboard' : ''?>">
+        <?php if (!in_array($controller, ['Dashboards']) && !in_array($path, ['/login', '/users/view'])) : ?>
+            <h3><a href=""><?= __(ucfirst($action == 'index' ? '' : $action)) . ' ' . __(substr(ucfirst($controller), 0, -1)) ?></a></h3>
+        <?php endif; ?>
         <?= $this->fetch('content') ?>
     </div>
-    <footer>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Demo:
+            <a href="http://chainos.vn/">Chainos.vn</a>
+        </div>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
 </body>
 </html>
+
+<script>
+    $(function () {
+        $('.nav-item').hover(function () {
+            $('.dropdown-custom').css('display', 'block');
+        }, function () {
+            $('.dropdown-custom').css('display', 'none');
+        })
+    })
+</script>

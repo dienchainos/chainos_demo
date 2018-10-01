@@ -52,14 +52,37 @@ Router::scope('/', function (RouteBuilder $routes) {
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+    $routes->connect('/', ['controller' => 'Users', 'action' => 'login', 'login']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
-    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
-
-    /**
+	// Users router
+    $routes->connect('/login/*', ['controller' => 'Users', 'action' => 'login']);
+    $routes->connect('/users/logout/*', ['controller' => 'Users', 'action' => 'logout']);
+	$routes->connect('/users/add/*', ['controller' => 'Users', 'action' => 'add']);
+	// Format router
+	$routes->connect('/formats/*', ['controller' => 'Formats', 'action' => 'index']);
+	$routes->connect('/formats/add/*', ['controller' => 'Formats', 'action' => 'add']);
+	$routes->connect('/formats/edit/*', ['controller' => 'Formats', 'action' => 'edit']);
+	$routes->connect('/formats/delete/*', ['controller' => 'Formats', 'action' => 'delete']);
+	// Role router
+	$routes->connect('/roles/*', ['controller' => 'Roles', 'action' => 'index']);
+	$routes->connect('/roles/add/*', ['controller' => 'Roles', 'action' => 'add']);
+	$routes->connect('/roles/edit/*', ['controller' => 'Roles', 'action' => 'edit']);
+	$routes->connect('/roles/delete/*', ['controller' => 'Roles', 'action' => 'delete']);
+	// Reports router
+	$routes->connect('/reports/get/*', ['controller' => 'Reports', 'action' => 'get']);
+	$routes->connect('/reports/*', ['controller' => 'Reports', 'action' => 'index']);
+	$routes->connect('/reports/add/*', ['controller' => 'Reports', 'action' => 'add']);
+	$routes->connect('/reports/edit/*', ['controller' => 'Reports', 'action' => 'edit']);
+	$routes->connect('/reports/delete/*', ['controller' => 'Reports', 'action' => 'delete']);
+	// Dashboard router
+	$routes->connect('/dashboards/view/*', ['controller' => 'Reports', 'action' => 'view']);
+	$routes->connect('/dashboards/update-read/*', ['controller' => 'Dashboards', 'action' => 'read']);
+	$routes->connect('/dashboards/search/*', ['controller' => 'Dashboards', 'action' => 'search']);
+	
+	/**
      * Connect catchall routes for all controllers.
      *
      * Using the argument `DashedRoute`, the `fallbacks` method is a shortcut for

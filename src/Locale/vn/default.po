@@ -1,0 +1,83 @@
+msgid "Dashboard"
+msgstr "Bảng điều khiển"
+
+msgid "User"
+msgstr "Quản lý người dùng"
+
+msgid "Role"
+msgstr "Quyền người dùng"
+
+msgid "Report Form"
+msgstr "Mẫu báo cáo"
+
+msgid "Format"
+msgstr "Mẫu báo cáo"
+
+msgid "Report"
+msgstr "Báo cáo"
+
+msgid "Messages"
+msgstr "Thông báo"
+
+msgid "Logout"
+msgstr "Đăng xuất"
+
+msgid "Login"
+msgstr "Đăng nhập"
+
+msgid "Language: en"
+msgstr "Ngôn ngữ: vn"
+
+msgid "Title"
+msgstr "Tiêu đề"
+
+msgid "Format Name"
+msgstr "Loại báo cáo"
+
+msgid "Name"
+msgstr "Tên báo cáo"
+
+msgid "From"
+msgstr "Gửi từ"
+
+msgid "Districts"
+msgstr "Huyện"
+
+msgid "Provinces"
+msgstr "Tỉnh"
+
+msgid "Wards"
+msgstr "Xã phường"
+
+msgid "Created"
+msgstr "Ngày tạo"
+
+msgid "Username"
+msgstr "Họ và tên"
+
+msgid "Action"
+msgstr "Hành động"
+
+msgid "Role"
+msgstr "Tên quyền"
+
+msgid "Role Name"
+msgstr "Tên "
+
+msgid "Type"
+msgstr "Loại"
+
+msgid "Add"
+msgstr "Thêm "
+
+msgid "Edit"
+msgstr "Sửa"
+
+msgid "View"
+msgstr "Xem"
+
+msgid "Delete"
+msgstr "Xoá"
+
+msgid "Go Back"
+msgstr "Trở lại"
