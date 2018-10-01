@@ -109,7 +109,6 @@ class ReportsController extends AppController
 	{
 		$reports = $this->Reports->patchEntity($reports, $this->request->getData());
 		
-		$reports->type = 1;
 		$reports->user_id = $this->Auth->user('id');
 		$reports->ward_id = $this->Auth->user('ward_id');
 		$reports->province_id = $this->Auth->user('province_id');

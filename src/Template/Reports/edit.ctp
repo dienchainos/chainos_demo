@@ -29,11 +29,11 @@
 
     $(function () {
         sendAjaxForChangeFormatContent();
+        $('.submit').click(function(e) {
+            if (!confirm('You are ready for send this report ?')) {
+                return false;
+            }
+        });
     });
 
-    $('.submit').click(function(e) {
-        if (!confirm('You are ready for send this report ?')) {
-            return false;
-        }
-    });
 </script>
