@@ -81,6 +81,20 @@ Router::scope('/', function (RouteBuilder $routes) {
 	$routes->connect('/dashboards/view/*', ['controller' => 'Reports', 'action' => 'view']);
 	$routes->connect('/dashboards/update-read/*', ['controller' => 'Dashboards', 'action' => 'read']);
 	$routes->connect('/dashboards/search/*', ['controller' => 'Dashboards', 'action' => 'search']);
+	// Threads router
+	$routes->connect('/threads/*', ['controller' => 'Threads', 'action' => 'index']);
+	$routes->connect('/threads/add/*', ['controller' => 'Threads', 'action' => 'add']);
+	$routes->connect('/threads/edit/*', ['controller' => 'Threads', 'action' => 'edit']);
+	$routes->connect('/threads/delete/*', ['controller' => 'Threads', 'action' => 'delete']);
+	// Messages router
+	$routes->connect('/messages/*', ['controller' => 'Messages', 'action' => 'index']);
+	$routes->connect('/messages/add/*', ['controller' => 'Messages', 'action' => 'add']);
+	$routes->connect('/messages/edit/*', ['controller' => 'Messages', 'action' => 'edit']);
+	$routes->connect('/messages/get/*', ['controller' => 'Messages', 'action' => 'get']);
+	$routes->connect('/messages/delete/*', ['controller' => 'Messages', 'action' => 'delete']);
+	$routes->connect('/messages/getMessage/*', ['controller' => 'Messages', 'action' => 'getMessage']);
+	$routes->connect('/messages/search/*', ['controller' => 'Messages', 'action' => 'search']);
+	$routes->connect('/messages/updateMsgRead/*', ['controller' => 'Messages', 'action' => 'updateMsgRead']);
 	
 	/**
      * Connect catchall routes for all controllers.

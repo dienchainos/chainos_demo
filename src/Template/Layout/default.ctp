@@ -35,6 +35,9 @@ $cakeDescription = 'Chainos demo';
     <?= $this->fetch('script') ?>
 </head>
 <body>
+    <script>
+        var csrfToken = <?= json_encode($this->request->getParam('_csrfToken')) ?>;
+    </script>
     <?php if(!empty($user)) : ?>
     <nav class="navbar navbar-inverse">
         <ul class="title-area large-3 medium-4 columns">
@@ -49,6 +52,8 @@ $cakeDescription = 'Chainos demo';
             <li class="<?= $controller == 'Formats' ? 'active' : '' ?>"><a href="/formats"><?= __('Report Form') ?></a></li>
             <?php endif; ?>
             <li class="<?= $controller == 'Reports' ? 'active' : '' ?>"><a href="/reports"><?= __('Report') ?></a></li>
+            <li class="<?= $controller == 'Threads' ? 'active' : '' ?>"><a href="/threads"><?= __('Thread') ?></a></li>
+            <li class="<?= $controller == 'Messages' ? 'active' : '' ?>"><a href="/messages"><?= __('Message') ?></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li class="nav-item">

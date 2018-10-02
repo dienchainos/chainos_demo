@@ -16,6 +16,12 @@ msgstr "Mẫu báo cáo"
 msgid "Report"
 msgstr "Báo cáo"
 
+msgid "Thread"
+msgstr "Chủ đề tin nhắn"
+
+msgid "Message"
+msgstr "Thông báo"
+
 msgid "Messages"
 msgstr "Thông báo"
 

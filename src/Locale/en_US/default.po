@@ -16,6 +16,12 @@ msgstr "Report Form"
 msgid "Report"
 msgstr "Report"
 
+msgid "Thread"
+msgstr "Thread"
+
+msgid "Message"
+msgstr "Message"
+
 msgid "Messages"
 msgstr "Messages"
 

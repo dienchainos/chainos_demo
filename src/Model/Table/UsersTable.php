@@ -51,13 +51,14 @@ class UsersTable extends AppTable
 	
 	/**
 	 * @param array $condition
+	 * @param string $order
 	 * @return array|\Cake\ORM\Query
 	 */
-	public function getUserList(array $condition = [])
+	public function getUserList(array $condition = [], $order = 'DESC')
 	{
 		return $this->buildUserCondition($condition)->contain([
 			'Roles', 'Provinces', 'Districts', 'Wards'
-		]);
+		])->order(['Users.id' => $order]);
 	}
 	
 	/**

@@ -16,6 +16,12 @@ msgstr "レポートフォーム"
 msgid "Report"
 msgstr "報告"
 
+msgid "Thread"
+msgstr "スレッド"
+
+msgid "Message"
+msgstr "メッセージ"
+
 msgid "Messages"
 msgstr "メッセージ"
 

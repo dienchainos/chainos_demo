@@ -77,11 +77,10 @@ class DashboardsController extends AppController
 		$reports = $this->tableReport->findById($id)->firstOrFail();
 		
 		if (!$this->request->is(['ajax'])) {
-			return null;
+			return [];
 		}
 		
 		$this->tableReport->patchEntity($reports, $this->request->getData());
-
 		$this->tableReport->save($reports);
 	}
 	
